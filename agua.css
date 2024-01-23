@@ -21,8 +21,6 @@ body, html {
     height: auto; 
   }
 
-
-
   .enlaces-superiores {
     position: absolute;
     top:7px;
@@ -240,6 +238,4 @@ body, html {
         height: 250px;
         width: 100%;
       }
-
-
   }
