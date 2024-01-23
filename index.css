@@ -164,8 +164,8 @@ body, html {
    }
 
   .imagen-con-texto a:hover{
-    color: cornflowerblue; 
-    border-color: cornflowerblue; 
+    color: rgb(38, 112, 28); 
+    border-color: rgb(38, 112, 28);; 
    }
 
    .footer {
