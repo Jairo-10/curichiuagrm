@@ -164,7 +164,7 @@ body, html {
    }
 
   .imagen-con-texto a:hover{
-    color: rgb(38, 112, 28); /*color verde para el titulo*/
+    color: rgb(38, 112, 28); 
     border-color: rgb(38, 112, 28); /*color verde para el titulo*/
    }
 
