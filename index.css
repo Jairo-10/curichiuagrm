@@ -798,6 +798,18 @@ body, html {
       box-shadow: 0 8px 25px rgba(2,136,209,0.1);
     }
 
+/* --- ESTILOS PARA IMÁGENES DENTRO DEL CONTENIDO (Animales y Plantas) --- */
+.image-break {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+
     .services-list li::before {
       content: "💧";
       font-size: 1.5rem;
