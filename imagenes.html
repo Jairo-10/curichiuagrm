@@ -1,136 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IMAGENES CURICHI UAGRM</title>
-    <link rel="stylesheet" href="imagenes.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMAGENES CURICHI UAGRM</title>
+  <link rel="stylesheet" href="global.css">
+  
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="contenedor-imagen">
-        <img src="img/imagenes.jpg" alt="Imagen" class="imagen">
-      </div>
+
+  <!-- NAVBAR COMPONENT -->
+  <nav class="navbar">
+    <div class="nav-logos">
+      <img src="img/logo.png" alt="Logo UAGRM">
+      <img src="img/ficct.png" alt="Logo FICCT">
+      <img src="img/humanidades.png" alt="Logo Humanidades">
+    </div>
+
+    <!-- Menú Hamburguesa Móvil -->
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="nav-links">
+      <a href="/index.html">INICIO</a>
+      <a href="/historia.html">HISTORIA</a>
+      <a href="/ica.html">ICA</a>     
+      <a href="/importancia.html">IMPORTANCIA</a>
+      <a href="/imagenes.html" class="active">IMAGENES</a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero-section">
+    <img src="img/imagenes.jpg" alt="Imágenes" class="hero-bg">
+    <div class="hero-overlay"></div>
+    <div class="hero-content fade-in">
+      <h1>GALERÍA DEL CURICHI</h1>
+    </div>
+  </header>
+
+  <!-- MAIN GALLERY -->
+  <main class="container gallery-section">
     
-      <div class="enlaces-superiores">
-        <a href="/index.html">INICIO</a>
-        <a href="/historia.html">HISTORIA</a>
-        <a href="/ica.html">ICA</a>     
-        <a href="/importancia.html">IMPORTANCIA</a>
-        <a href="/imagenes.html">IMAGENES</a>
-      </div>
-
-      <div class="menu-icon" onclick="toggleMenu()">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
-    
-      <div class="imagen-fija">
-        <img src="img/logo.png" alt="Imagen pequeña" class="logo">
-        <img src="img/ficct.png" alt="Imagen pequeña" class="ficct">
-        <img src="img/humanidades.png" alt="Imagen pequeña" class="humanidades">
-    </div>
-
-    <div class="contenedor-titulo">
-      <h1>EL CURUCHI DE LA UAGRM</h1>
-    </div>
-    
-    <div class="imagenes-en-fila">
-      <div class="imagen-con-texto"><br>
-          <img src="Imagenes/imagen1.jpg" alt="Animales">
-      </div>
-      <div class="imagen-con-texto"><br>
-          <img src="Imagenes/imagen2.jpg" alt="Plantas">
-      </div>
-      <div class="imagen-con-texto"><br>
-          <img src="Imagenes/imagen3.jpg" alt="Agua">
-      </div>
-      <div class="imagen-con-texto"><br>
-          <img src="Imagenes/imagen4.jpg" alt="Si desaparece el Curichi">
+    <div class="fade-in">
+      <h2 class="gallery-title">Vistas de la Universidad</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="Imagenes/imagen1.jpg" alt="Vista 1" loading="lazy"></div>
+        <div class="gallery-item"><img src="Imagenes/imagen2.jpg" alt="Vista 2" loading="lazy"></div>
+        <div class="gallery-item"><img src="Imagenes/imagen3.jpg" alt="Vista 3" loading="lazy"></div>
+        <div class="gallery-item"><img src="Imagenes/imagen4.jpg" alt="Vista 4" loading="lazy"></div>
       </div>
     </div>
 
-    <div class="contenedor-titulo">
-      <h1>ANIMALES DEL CURICHI</h1>
-    </div>
-
-
-    <div class="imagenes-en-fila">
-      <div class="imagen-con-texto"><br>
-          <img src="Imagenes/animal1.1.jpg" alt="Animales">
-      </div>
-      <div class="imagen-con-texto"><br>
-          <img src="Imagenes/animal2.2.jpg" alt="Plantas">
-      </div>
-      <div class="imagen-con-texto"><br>
-          <img src="Imagenes/animal3.3.jpg" alt="Agua">
-      </div>
-      <div class="imagen-con-texto"><br>
-          <img src="Imagenes/animal4.jpg" alt="Si desaparece el Curichi">
+    <div class="fade-in">
+      <h2 class="gallery-title">Fauna del Curichi</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="Imagenes/animal1.1.jpg" alt="Animal 1" loading="lazy"></div>
+        <div class="gallery-item"><img src="Imagenes/animal2.2.jpg" alt="Animal 2" loading="lazy"></div>
+        <div class="gallery-item"><img src="Imagenes/animal3.3.jpg" alt="Animal 3" loading="lazy"></div>
+        <div class="gallery-item"><img src="Imagenes/animal4.jpg" alt="Animal 4" loading="lazy"></div>
+        <div class="gallery-item"><img src="Imagenes/animal5.5.jpg" alt="Animal 5" loading="lazy"></div>
+        <div class="gallery-item"><img src="Imagenes/animal6.6.jpg" alt="Animal 6" loading="lazy"></div>
+        <div class="gallery-item"><img src="Imagenes/animal7.7.jpg" alt="Animal 7" loading="lazy"></div>
+        <div class="gallery-item"><img src="Imagenes/animales8.8.jpg" alt="Animal 8" loading="lazy"></div>
       </div>
     </div>
 
-    <div class="imagenes-en-fila">
-      <div class="imagen-con-texto"><br>
-          <img src="Imagenes/animal5.5.jpg" alt="Animales">
-      </div>
-      <div class="imagen-con-texto"><br>
-          <img src="Imagenes/animal6.6.jpg" alt="Plantas">
-      </div>
-      <div class="imagen-con-texto"><br>
-          <img src="Imagenes/animal7.7.jpg" alt="Agua">
-      </div>
-      <div class="imagen-con-texto"><br>
-          <img src="Imagenes/animales8.8.jpg" alt="Si desaparece el Curichi">
-      </div>
-    </div>
-
-    <div class="contenedor-titulo">
-      <h1>ARBOLES DEL CURICHI</h1>
-    </div>
-
-    <div class="imagenes-en-fila">
-      <div class="imagen-con-texto"><br>
-          <img src="Imagenes/planta1.jpg" alt="Animales">
-      </div>
-      <div class="imagen-con-texto"><br>
-          <img src="Imagenes/planta2.jpg" alt="Plantas">
-      </div>
-      <div class="imagen-con-texto"><br>
-          <img src="Imagenes/planta3.jpg" alt="Agua">
-      </div>
-      <div class="imagen-con-texto"><br>
-          <img src="Imagenes/planta4.jpg" alt="Si desaparece el Curichi">
+    <div class="fade-in">
+      <h2 class="gallery-title">Flora del Curichi</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="Imagenes/planta1.jpg" alt="Planta 1" loading="lazy"></div>
+        <div class="gallery-item"><img src="Imagenes/planta2.jpg" alt="Planta 2" loading="lazy"></div>
+        <div class="gallery-item"><img src="Imagenes/planta3.jpg" alt="Planta 3" loading="lazy"></div>
+        <div class="gallery-item"><img src="Imagenes/planta4.jpg" alt="Planta 4" loading="lazy"></div>
+        <div class="gallery-item"><img src="Imagenes/planta5.jpg" alt="Planta 5" loading="lazy"></div>
+        <div class="gallery-item"><img src="Imagenes/planta6.jpg" alt="Planta 6" loading="lazy"></div>
+        <div class="gallery-item"><img src="Imagenes/planta7.jpg" alt="Planta 7" loading="lazy"></div>
+        <div class="gallery-item"><img src="Imagenes/planta8.jpg" alt="Planta 8" loading="lazy"></div>
+        <div class="gallery-item"><img src="Imagenes/planta9.jpg" alt="Planta 9" loading="lazy"></div>
+        <div class="gallery-item"><img src="Imagenes/planta10.jpg" alt="Planta 10" loading="lazy"></div>
       </div>
     </div>
 
-    <div class="imagenes-en-fila">
-      <div class="imagen-con-texto"><br>
-          <img src="Imagenes/planta5.jpg" alt="Animales">
-      </div>
-      <div class="imagen-con-texto"><br>
-          <img src="Imagenes/planta6.jpg" alt="Plantas">
-      </div>
-      <div class="imagen-con-texto"><br>
-          <img src="Imagenes/planta7.jpg" alt="Agua">
-      </div>
-      <div class="imagen-con-texto"><br>
-          <img src="Imagenes/planta8.jpg" alt="Si desaparece el Curichi">
-      </div>
-    </div>
+  </main>
 
-    <div class="imagenes-en-fila">
-      <div class="imagen-con-texto2"><br>
-          <img src="Imagenes/planta9.jpg" alt="Animales">
-      </div>
-      <div class="imagen-con-texto2"><br>
-          <img src="Imagenes/planta10.jpg" alt="Plantas">
-      </div>
-      </div>
-    </div>
+  <!-- Image Modal -->
+  <div id="imageModal" class="image-modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
 
-
-    <br>
-    <script src="imagenes.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>

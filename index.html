@@ -3,72 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conoce el Curichi UAGRM, un humedal vital que provee servicios ambientales importantes en Bolivia.">
   <title>CURICHI UAGRM</title>
+  <link rel="stylesheet" href="global.css">
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-  <div class="contenedor-imagen">
-    <img src="img/curichi.jpg" alt="Imagen" class="imagen">
-  </div>
-
-  <div class="enlaces-superiores">
-    <a href="/index.html">INICIO</a>
-    <a href="/historia.html">HISTORIA</a>
-    <a href="/ica.html">ICA</a>     
-    <a href="/importancia.html">IMPORTANCIA</a>
-    <a href="/imagenes.html">IMAGENES</a>
-  </div>
-
-  <div class="menu-icon" onclick="toggleMenu()">
-    <div class="bar"></div>
-    <div class="bar"></div>
-    <div class="bar"></div>
-  </div>
-
-  <div class="imagen-fija">
-    <img src="img/logo.png" alt="Imagen pequeña" class="logo">
-    <img src="img/ficct.png" alt="Imagen pequeña" class="ficct">
-    <img src="img/humanidades.png" alt="Imagen pequeña" class="humanidades">
-  </div>
-
-  <div>
-    <h1 class="titulo">¿SABÍAS QUE EL CURICHI ES UN HUMEDAL?</h1>
-    <p class="parrafo">Los humedales son sitios RAMSAR que contribuyen al bienestar de la humanidad con servicios ambientales, además que actúan como filtros naturales.</p>
-    <h2 class="subtitulo">SERVICIOS AMBIENTALES</h2>
-  </div>
-
-  <ol class="listas">
-    <li>Limpia el agua al eliminar y absorber agentes contaminantes.</li>
-    <li>Captan y almacenan el agua de las lluvias.</li>
-    <li>Durante la época seca, el humedal libera el agua almacenada la cual reduce la escasez de agua.</li>
-    <li>Los humedales son capturadores de CO2, pueden absorber hasta el doble de contaminación que los árboles. </li>
-    <li>El Curichi de la facultad de humanidades produce aproximadamente 5.000 litros de agua al día.</li>    
-  </ol>
-
-  <div class="imagenes-en-fila">
-    <div class="imagen-con-texto"><br>
-        <a href="/animales.html">ANIMALES</a> 
-        <img src="img/animales.jpg" alt="Animales">
+  <!-- NAVBAR COMPONENT -->
+  <nav class="navbar">
+    <div class="nav-logos">
+      <img src="img/logo.png" alt="Logo UAGRM">
+      <img src="img/ficct.png" alt="Logo FICCT">
+      <img src="img/humanidades.png" alt="Logo Humanidades">
     </div>
-    <div class="imagen-con-texto"><br>
-        <a href="/plantas.html">ARBOLES</a>
-        <img src="img/plantas.jpg" alt="Plantas">
-    </div>
-    <div class="imagen-con-texto"><br>
-        <a href="/agua.html">AGUA </a>
-        <img src="img/agua.jpg" alt="Agua">
-    </div>
-    <div class="imagen-con-texto"><br>
-        <a href="/desaparece.html" >SI DESAPARECE EL CURICHI</a>
-        <img src="img/si_desapaarece.jpg" alt="Si desaparece el Curichi">
-    </div>
-  </div>
 
-  <div class="footer">
-    <img src="img/creadores.jpg" alt="Pie de página" class="footer-image">
-  </div>
+    <!-- Menú Hamburguesa Móvil -->
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
-  <script src="inicio.js"></script>
+    <div class="nav-links">
+      <a href="/index.html" class="active">INICIO</a>
+      <a href="/historia.html">HISTORIA</a>
+      <a href="/ica.html">ICA</a>     
+      <a href="/importancia.html">IMPORTANCIA</a>
+      <a href="/imagenes.html">IMAGENES</a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero-section">
+    <img src="img/curichi.jpg" alt="Vista del Curichi" class="hero-bg">
+    <div class="hero-overlay"></div>
+    <div class="hero-content fade-in">
+      <h1>CURICHI UAGRM</h1>
+      <p>Un tesoro ecológico dentro de nuestra universidad. Descubre la importancia de los humedales para la biodiversidad y nuestro medio ambiente.</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- ABOUT SECTION -->
+    <section class="about-section section-padding">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text fade-in">
+            <h2>¿SABÍAS QUE EL CURICHI ES UN HUMEDAL?</h2>
+            <p>Los humedales son sitios protegidos e invaluables (Sitios RAMSAR) que contribuyen al bienestar de la humanidad ofreciendo servicios ambientales actuando como filtros naturales para la ciudad y hogar de decenas de especies.</p>
+          </div>
+          
+          <div class="glass-card fade-in">
+            <h3 style="margin-bottom: 20px; font-size: 1.8rem;">Servicios Ambientales</h3>
+            <ul class="services-list">
+              <li>Limpian el agua al eliminar y absorber agentes contaminantes del medio terrestre y acuático.</li>
+              <li>Captan, filtran y almacenan el agua de las fuertes lluvias.</li>
+              <li>Durante la época seca, el humedal libera el agua almacenada, reduciendo la escasez hídrica.</li>
+              <li>Son increíbles capturadores de CO2; pueden absorber hasta el doble de contaminación que los árboles regulares.</li>
+              <li><strong>El Curichi de la facultad de Humanidades produce aproximadamente 5.000 litros de agua al día.</strong></li>    
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARDS SECTION -->
+    <section class="topics-section section-padding">
+      <div class="container">
+        <div class="topics-header fade-in">
+          <h2>Explora la Biodiversidad</h2>
+          <p style="color: var(--text-light); font-size: 1.2rem;">Adéntrate en los tesoros que el humedal protege cada día.</p>
+        </div>
+
+        <div class="cards-grid fade-in">
+          
+          <a href="/animales.html" class="topic-card">
+            <img src="img/animales.jpg" alt="Animales" loading="lazy">
+            <div class="topic-card-overlay">
+              <span class="topic-card-title">Fauna Silvestre</span>
+            </div>
+          </a>
+
+          <a href="/plantas.html" class="topic-card">
+            <img src="img/plantas.jpg" alt="Árboles y Plantas" loading="lazy">
+            <div class="topic-card-overlay">
+              <span class="topic-card-title">Flora del Humedal</span>
+            </div>
+          </a>
+
+          <a href="/agua.html" class="topic-card">
+            <img src="img/agua.jpg" alt="Filtración de Agua" loading="lazy">
+            <div class="topic-card-overlay">
+              <span class="topic-card-title">Recurso Hídrico</span>
+            </div>
+          </a>
+
+          <a href="/desaparece.html" class="topic-card">
+            <img src="img/si_desapaarece.jpg" alt="Impacto si desaparece el Curichi" loading="lazy">
+            <div class="topic-card-overlay">
+              <span class="topic-card-title">¿Si desaparece?</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer fade-in">
+    <img src="img/creadores.jpg" alt="Pie de página y Creadores del Proyecto" loading="lazy">
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>

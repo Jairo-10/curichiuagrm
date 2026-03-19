@@ -1,52 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IMPORTANCIA CURICHI UAGRM</title><title>Document</title>
-    <link rel="stylesheet" href="importancia.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMPORTANCIA CURICHI UAGRM</title>
+  <link rel="stylesheet" href="global.css">
+  
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="contenedor-imagen">
-        <img src="img/importancia.jpg" alt="Imagen" class="imagen">
-      </div>
-    
-      <div class="enlaces-superiores">
-        <a href="/index.html">INICIO</a>
-        <a href="/historia.html">HISTORIA</a>
-        <a href="/ica.html">ICA</a>     
-        <a href="/importancia.html">IMPORTANCIA</a>
-        <a href="/imagenes.html">IMAGENES</a>
-      </div>
-    
-      <div class="menu-icon" onclick="toggleMenu()">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
-    
-      <div class="imagen-fija">
-        <img src="img/logo.png" alt="Imagen pequeña" class="logo">
-        <img src="img/ficct.png" alt="Imagen pequeña" class="ficct">
-        <img src="img/humanidades.png" alt="Imagen pequeña" class="humanidades">
+
+  <!-- NAVBAR COMPONENT -->
+  <nav class="navbar">
+    <div class="nav-logos">
+      <img src="img/logo.png" alt="Logo UAGRM">
+      <img src="img/ficct.png" alt="Logo FICCT">
+      <img src="img/humanidades.png" alt="Logo Humanidades">
     </div>
 
-    <div class="contenedor-titulo">
+    <!-- Menú Hamburguesa Móvil -->
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="nav-links">
+      <a href="/index.html">INICIO</a>
+      <a href="/historia.html">HISTORIA</a>
+      <a href="/ica.html">ICA</a>     
+      <a href="/importancia.html" class="active">IMPORTANCIA</a>
+      <a href="/imagenes.html">IMAGENES</a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero-section">
+    <img src="img/importancia.jpg" alt="Importancia" class="hero-bg">
+    <div class="hero-overlay"></div>
+    <div class="hero-content fade-in">
       <h1>IMPORTANCIA DEL CURICHI</h1>
     </div>
+  </header>
 
-    <ol class="listas">
-      <li>Es el hábitat de muchos animales endémicos y visitantes, tanto terrestres como acuáticos, además que posee árboles típicos del departamento de Santa cruz.</li>
-      <li>El Curichi protege a la Facultad de humanidades de cambios climáticos bruscos, como ser el aumento de la temperatura, el incremento del dióxido de carbono, inundaciones por lluvias continuas.</li>
-      <li>Las plantas acuáticas del curichi absorben agentes contaminantes del humedal y purifican el agua para los animales acuáticos como ser los peces, las tatarugas,etc.</li>
-      <li>Contiene aproximadamente el 30 % del carbono en el Curichi, está cantidad retenida representa el doble de contención del CO2 que puede absorber los árboles.</li>
-      <li>El Curichi es un patrimonio muy valioso para la UAGRM, debido a que contiene valor natural e histórico.</li>    
-    </ol>
-
-    <div class="footer">
-      <img src="img/importancia1.jpg" alt="Pie de página" class="footer-image">
+  <!-- MAIN CONTENT -->
+  <main class="container content-section">
+    <div class="glass-card fade-in">
+      <ol class="importance-list">
+        <li>Es el hábitat de muchos animales endémicos y visitantes, tanto terrestres como acuáticos, además que posee árboles típicos del departamento de Santa Cruz.</li>
+        <li>El Curichi protege a la Facultad de Humanidades de cambios climáticos bruscos, como ser el aumento de la temperatura, el incremento del dióxido de carbono y las inundaciones provocadas por fuertes lluvias y tormentas continuas.</li>
+        <li>Las plantas acuáticas del curichi absorben agentes contaminantes del humedal y purifican el agua para los animales acuáticos como ser los peces, las tatarugas, etc.</li>
+        <li>Contiene aproximadamente el 30% del carbono. Esta cantidad retenida representa el doble de contención de CO2 que pueden absorber los árboles habituales de la región.</li>
+        <li>El Curichi es un patrimonio muy valioso para la UAGRM, debido a que no sólo contiene un incalculable valor natural, sino también histórico para toda la comunidad universitaria.</li>    
+      </ol>
     </div>
-    
-    <script src="importancia.js"></script>
+  </main>
+
+  <footer class="site-footer fade-in">
+    <img src="img/importancia1.jpg" alt="Pie de página" loading="lazy">
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>

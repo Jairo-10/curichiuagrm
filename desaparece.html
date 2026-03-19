@@ -1,55 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DESAPARECE CURICHI UAGRM</title>
-    <link rel="stylesheet" href="desaparece.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DESAPARECE CURICHI UAGRM</title>
+  <link rel="stylesheet" href="global.css">
+  
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="contenedor-imagen">
-        <img src="img/si_desapaarece.jpg" alt="Imagen" class="imagen">
-      </div>
-    
-      <div class="enlaces-superiores">
-        <a href="/index.html">INICIO</a>
-        <a href="/historia.html">HISTORIA</a>
-        <a href="/ica.html">ICA</a>     
-        <a href="/importancia.html">IMPORTANCIA</a>
-        <a href="/imagenes.html">IMAGENES</a>
-      </div>
-    
-      <div class="menu-icon" onclick="toggleMenu()">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
-    
-      <div class="imagen-fija">
-        <img src="img/logo.png" alt="Imagen pequeña" class="logo">
-        <img src="img/ficct.png" alt="Imagen pequeña" class="ficct">
-        <img src="img/humanidades.png" alt="Imagen pequeña" class="humanidades">
+  <nav class="navbar">
+    <!-- NAVBAR COMPONENT -->
+    <div class="nav-logos">
+      <img src="img/logo.png" alt="Logo UAGRM">
+      <img src="img/ficct.png" alt="Logo FICCT">
+      <img src="img/humanidades.png" alt="Logo Humanidades">
     </div>
 
-    <div class="contenedor-titulo">
-      <h1>CONSECUENCIAS SI SE LLEGARÁ A SECAR EL CURICHI</h1>
+    <!-- Menú Hamburguesa Móvil -->
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-
-    <ol class="listas">
-      <li>El secado del curichi provocaría la pérdida de un habitad importante para una gran variedad de plantas y animales.</li>
-      <li>Se incrementaría la temperatura llegando a sentir mas calor y deshidratación.</li>  
-      <li>No se produciría 5.000 litros de gua por día, debido a que los árboles producen agua.</li>
-      <li>Se incrementaría las enfermedades respiratorias por el índice de contaminación del aire, más personas tendrían dificultades para respirar, los arboles purifican el aire al igual que el humedal.</li>
-      <li>La pérdida del curichi incrementaría la probabilidad de tener desastres naturales.</li>
-      <li>Puede desestabilizar el suelo y provocaría erosión en la tierra.</li>
-      <li>Los vientos huracanados golpearían con mas fuerza a predios de la facultad.</li>
-      <li>El secado del curichi tendría un impacto para los estudiantes, podría afectar en el campo de investigación de las carreras y también afectaría la salud mental y física.</li>
-      <li>Si se llegará a secar provocaría que los estudiantes pierdan un patrimonio natural.</li>
-    </ol>
-
-    <div class="footer">
-      <img src="img/desaparece1.jpg" alt="Pie de página" class="footer-image">
+    <div class="nav-links">
+      <a href="/index.html">INICIO</a>
+      <a href="/historia.html">HISTORIA</a>
+      <a href="/ica.html">ICA</a>     
+      <a href="/importancia.html">IMPORTANCIA</a>
+      <a href="/imagenes.html">IMAGENES</a>
     </div>
-    <script src="dasaparece.js"></script>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero-section">
+    <img src="img/si_desapaarece.jpg" alt="Si desaparece" class="hero-bg">
+    <div class="hero-overlay"></div>
+    <div class="hero-content fade-in">
+      <h1>¿CONSECUENCIAS DE SECAR EL CURICHI?</h1>
+    </div>
+  </header>
+
+  <main class="container content-section">
+    <div class="glass-card fade-in">
+      <ul class="warning-list">
+        <li>El secado del curichi provocaría la pérdida de un hábitat importante para una gran variedad de plantas y animales endémicos y extintos.</li>
+        <li>Se incrementaría la sensación térmica sintiendo más un intenso calor, aridez ambiental y mayor deshidratación humana.</li>  
+        <li>Se dejarían de producir aproximadamente 5.000 litros de agua por día filtrados y almacenados naturalmente.</li>
+        <li>Incrementarían las enfermedades respiratorias debido a un alto índice de contaminación del aire, la polución ya no sería filtrada por los inmensos árboles milenarios.</li>
+        <li>La pérdida del curichi aumentaría drásticamente la probabilidad de ocurrencia de desastres naturales locales.</li>
+        <li>Puede desestabilizar la firmeza del suelo de la ciudad ocasionando hundimientos y erosión a largo plazo de la tierra circundante.</li>
+        <li>Los vientos huracanados sin amortiguación verde golpearían con mayor fuerza todos los terrenos de la facultad.</li>
+        <li>Se generaría un insondable y triste impacto académico y social a los estudiantes para sus zonas de descargas mentales e investigaciones de carrera.</li>
+        <li>Indudablemente, provocaría que todos los miembros de la universidad perdiesen para siempre un patrimonio de incalculable valor natural.</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="site-footer fade-in">
+    <img src="img/desaparece1.jpg" alt="Pie de página" loading="lazy">
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
